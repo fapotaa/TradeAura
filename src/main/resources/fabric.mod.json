@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "repo": "${mod_repo}"
+  },
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "${mod_package}.Addon"
+    ]
+  },
+  "mixins": [],
+  "custom": {
+    "meteor-client:color": "${mod_color}"
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": ">=${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
